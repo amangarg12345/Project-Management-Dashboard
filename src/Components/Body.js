@@ -1,7 +1,7 @@
-import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './Home';
 import SignInOut from './SignInOut';
+import Dashboard from './Dashboard';
 const Body = () => {
     const AppRouter = createBrowserRouter([
         {
@@ -11,7 +11,11 @@ const Body = () => {
         {
             path : "/signInOut",
             element : <SignInOut/>
-         }
+         },
+         {
+          path : "/Dashboard",
+          element : <Dashboard/>
+       }
     ]);
   return (
     <div>
