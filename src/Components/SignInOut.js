@@ -55,7 +55,7 @@ const SignInOut = () => {
         <p className='text-red-600 text-xl'>{errorMessage}</p>
         <button className='w-full bg-red-600 px-2 py-3 my-2' onClick={handleLogin}>{isSignIn ? "Sign In" : "Sign Up"}</button>
         <p className='my-4 px-2 cursor-pointer' onClick={toggleSignUp}>
-            {isSignIn ? "New to Netflix? Sign Up Now" : "Already registered? Sign In Now"}</p>
+            {isSignIn ? "Sign Up Now" : "Already registered? Sign In Now"}</p>
         </form>
     </div>
   )
