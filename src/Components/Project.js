@@ -37,7 +37,6 @@ const Project = () => {
     return (
     <div>
     <button onClick={handleBack} className=' bg-gray-300 text-black px-2 py-2 rounded-lg'>Back</button>
-      <h1>Project</h1>
       <div>
       <button className='absolute right-6 bg-gray-300 text-black px-2 py-2 rounded-lg' onClick={handleNewTask}>New Task</button>
       {
@@ -47,7 +46,7 @@ const Project = () => {
         <h1 className='font-bold text-3xl my-3'>New Task</h1>
         <input className="bg-gray-950 w-full py-3 px-2 my-2 bg-opacity-85" type='text' 
         name='TaskName' value={inputNewTask.TaskName} placeholder='Task Name' onChange={handleInputTask}/>
-        <input className="bg-gray-950 w-full py-3 px-2 my-2 bg-opacity-85" type='text' 
+        <input className="bg-gray-950 w-full py-3 px-2 my-2 bg-opacity-85" type='textarea' 
         name='TaskDes' value={inputNewTask.TaskDes} placeholder='Description' onChange={handleInputTask}/>
         <button className='w-full bg-red-600 px-2 py-3 my-2' onClick={handleAddTask}>Add</button>
         </form>
